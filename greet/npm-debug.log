@@ -1,0 +1,74 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'link' ]
+2 info using npm@2.5.1
+3 info using node@v0.12.0
+4 verbose node symlink /usr/local/bin/node
+5 verbose linkPkg /Users/i302898/Desktop/greet
+6 verbose gentlyRm vacuuming /usr/local/lib/node_modules/greet
+7 silly gentlyRm purging /usr/local/lib/node_modules/greet
+8 silly gentlyRm quitting because other entries in /usr/local/lib/node_modules
+9 verbose gentlyRm vacuuming /usr/local/lib/node_modules/greet
+10 verbose link build target /usr/local/lib/node_modules/greet
+11 verbose install where, what [ '/Users/i302898/Desktop/greet', [] ]
+12 verbose install where, deps [ '/Users/i302898/Desktop/greet', [ 'minimist' ] ]
+13 verbose install where, peers [ '/Users/i302898/Desktop/greet', [] ]
+14 info preinstall greet@0.0.0
+15 verbose already installed skipping minimist@^1.2.0 /Users/i302898/Desktop/greet
+16 silly install resolved []
+17 info build /Users/i302898/Desktop/greet
+18 verbose linkStuff [ false, false, false, '/Users/i302898/Desktop' ]
+19 info linkStuff greet@0.0.0
+20 verbose linkBins greet@0.0.0
+21 verbose linkMans greet@0.0.0
+22 verbose rebuildBundles greet@0.0.0
+23 verbose rebuildBundles [ 'minimist' ]
+24 info install greet@0.0.0
+25 info postinstall greet@0.0.0
+26 info prepublish greet@0.0.0
+27 info build /usr/local/lib/node_modules/greet
+28 verbose linkStuff [ true,
+28 verbose linkStuff   '/usr/local/lib/node_modules',
+28 verbose linkStuff   true,
+28 verbose linkStuff   '/usr/local/lib/node_modules' ]
+29 info linkStuff greet@0.0.0
+30 verbose linkBins greet@0.0.0
+31 verbose link bins [ { greet: './bin/greet.js' }, '/usr/local/bin', true ]
+32 verbose linkMans greet@0.0.0
+33 verbose gentlyRm verifying that /Users/i302898/Desktop/greet is managed by npm
+34 silly isManaged /Users/i302898/Desktop/greet is not inside /Users/i302898/Desktop/greet/node_modules
+35 silly isManaged /Users/i302898/Desktop/greet is not inside /Users/i302898/Desktop/greet/node_modules
+36 silly isManaged /Users/i302898/Desktop/greet is inside /Users/i302898/Desktop/greet
+37 silly gentlyRm /Users/i302898/Desktop/greet is managed by npm
+38 silly gentlyRm /usr/local/bin/greet is not under /Users/i302898/Desktop/greet
+39 silly gentlyRm checking to see if /usr/local/bin/greet is a link
+40 silly gentlyRm /usr/local/bin/greet is a link
+41 silly gentlyRm checking to see if /usr/local/lib/node_modules/greet/bin/greet.js is managed by npm
+42 silly isManaged /usr/local/lib/node_modules/greet/bin/greet.js is not inside /Users/i302898/Desktop/greet/node_modules
+43 silly isManaged /usr/local/lib/node_modules/greet/bin/greet.js is not inside /Users/i302898/Desktop/greet/node_modules
+44 silly isManaged /usr/local/lib/node_modules/greet/bin/greet.js is not inside /Users/i302898/Desktop/greet
+45 silly isManaged /usr/local/lib/node_modules is not inside /usr/local/lib/node_modules/greet/bin/greet.js
+46 verbose isManaged no path
+47 silly isManaged /usr/local/bin is not inside /usr/local/lib/node_modules/greet/bin/greet.js
+48 silly isManaged /usr/local is not inside /usr/local/lib/node_modules/greet/bin/greet.js
+49 verbose gentlyRm /usr/local/lib/node_modules/greet/bin/greet.js is not managed by npm
+50 verbose stack Error: Refusing to delete: /usr/local/bin/greet not in /Users/i302898/Desktop/greet
+50 verbose stack     at clobberFail (/usr/local/lib/node_modules/npm/lib/utils/gently-rm.js:168:12)
+50 verbose stack     at /usr/local/lib/node_modules/npm/lib/utils/gently-rm.js:107:18
+50 verbose stack     at zalgoSafe (/usr/local/lib/node_modules/npm/node_modules/dezalgo/dezalgo.js:20:10)
+50 verbose stack     at map (/usr/local/lib/node_modules/npm/node_modules/async-some/some.js:28:33)
+50 verbose stack     at reduce (/usr/local/lib/node_modules/npm/node_modules/async-some/some.js:38:5)
+50 verbose stack     at /usr/local/lib/node_modules/npm/lib/utils/gently-rm.js:134:14
+50 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+50 verbose stack     at /usr/local/lib/node_modules/npm/lib/utils/gently-rm.js:152:16
+50 verbose stack     at FSReqWrap.oncomplete (evalmachine.<anonymous>:99:15)
+51 verbose cwd /Users/i302898/Desktop/greet
+52 error Darwin 15.0.0
+53 error argv "node" "/usr/local/bin/npm" "link"
+54 error node v0.12.0
+55 error npm  v2.5.1
+56 error path /usr/local/bin/greet
+57 error code EEXIST
+58 error Refusing to delete: /usr/local/bin/greet not in /Users/i302898/Desktop/greet
+File exists: /usr/local/bin/greet
+Move it away, and try again.
+59 verbose exit [ 1, true ]
